@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)https://cmp.teads.mgr.consensu.org/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>IframeTeadsConsensu</title>
+</head>
+
+<body style="background-color: transparent">
+  <script type="text/javascript">
+    function readCookie(name) {
+      const value = '; ' + document.cookie;
+      const parts = value.split('; ' + name + '=');
+      if (parts.length === 2) {
+        return parts.pop().split(';').shift();
+      }
+      return 'na';
+    }
+    var euConsentCookieValue = readCookie('euconsent')
+    window.parent.postMessage({ teadsEuConsent: euConsentCookieValue }, '*');
+  </script>
+
+
+
+</body></html>
